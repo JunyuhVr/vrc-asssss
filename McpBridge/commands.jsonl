@@ -1,0 +1,175 @@
+{"id": "3b8a58ff0f1649d8a26c64711006ea1c", "tool": "ping", "args": {}}
+{"id": "434ce16b7e6644c1a4222ea4362aac61", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "6b0b1b14e96e49e4bd56ad034bf73309", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn"}}
+{"id": "ddcf2c41f2584b17ad418ef39f69a1e5", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "10d19bf0ca7240cc820d35333f058535", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP1"}}
+{"id": "6e568eed10044c33babbbcc2602777df", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP2"}}
+{"id": "6806ed090b694cbe8683c2d77cc385c0", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP2"}}
+{"id": "8426cb933ce0471b87d8496b90e3575d", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerA", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerA"}}
+{"id": "5a29c6039e6c4daebc1e9065d57d9995", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerB", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerB"}}
+{"id": "b34437c60d364a9ea3bd651785fcc0e4", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerC", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerC"}}
+{"id": "7e9e4bdfd0b045f4bb0db6b5bac8f412", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerD", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerD"}}
+{"id": "109c79e08782421587146a466a00e966", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/StartBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "StartGame"}}
+{"id": "ed4a47f49c214165a9f37efa17b98b5a", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/ResetBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "ResetGame"}}
+{"id": "954f9cdaa42742d5bd1a535361770396", "tool": "save_scene", "args": {}}
+{"id": "0321ddb7aba74cb2905c23f382b4caae", "tool": "save_scene", "args": {}}
+{"id": "daf04130d3874d8abe2cf50b3f7bc012", "tool": "ping", "args": {}}
+{"id": "5ec1588a12414d7abaec329489785eb3", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn"}}
+{"id": "1e7394ecce0e4d398bc90b1927c66198", "tool": "list_hierarchy", "args": {}}
+{"id": "1a96fb88dd52425f87ddc685bb126ea3", "tool": "find_object", "args": {"target": "EventSystem"}}
+{"id": "d8fbdc4b339c43ea8674b4639fd90f55", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "a842c1583f3e47518d86b367fdf5e4c0", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP1"}}
+{"id": "c4f446716d7f4cf0a0201fd5d98bd619", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP2"}}
+{"id": "fc7115a8ed5a4e52a0c76a2b73d065e0", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP2"}}
+{"id": "c581a157db7744d3942bb3f43b297319", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerA", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerA"}}
+{"id": "8333a2fc2a154a2cabf5f47eb9228870", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerB", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerB"}}
+{"id": "8ce7de26901a47c79e58824c75e31be5", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerC", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerC"}}
+{"id": "6443a562aaed46e3b076c3aa08a8eac9", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerD", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerD"}}
+{"id": "bc650634bf824698b0170b2b4b095989", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/StartBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "StartGame"}}
+{"id": "5c26238bcf14482aa794b6decb66e94d", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/ResetBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "ResetGame"}}
+{"id": "ca9dbcb6ae9e47b3a2614fe1e5a526d7", "tool": "save_scene", "args": {}}
+{"id": "92bd5e9c3b0342c9994681bb9bf105d5", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "fb8660fef500426c86722b1a0db90468", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP1"}}
+{"id": "680193950bf244238ea91922ab423f64", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP2"}}
+{"id": "faf2d136554041d0bb5dfcaaa3d7285a", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP2"}}
+{"id": "7102d49f01054e00b922fd5cc7134590", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerA", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerA"}}
+{"id": "b2da9bc22dc74c1782db6e0a85a08277", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerB", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerB"}}
+{"id": "4ac988d059f44234a569d70c4fddc2b5", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerC", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerC"}}
+{"id": "fd57fe8f7882486493141a0d6c31b01e", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerD", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerD"}}
+{"id": "7826b6415b8d40849f9cdd63f47773af", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/StartBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "StartGame"}}
+{"id": "d39c2ec0b2974747a6123aaba72514f5", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/ResetBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "ResetGame"}}
+{"id": "1547a97d6a4247de910603949f24fcc8", "tool": "save_scene", "args": {}}
+{"id": "d5ebf7b9087e443bab909cc203cb05a2", "tool": "project_info", "args": {}}
+{"id": "99a1ce194d8941acaa5c869ab86adebb", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "f93501743dfb4279892821c8ea077866", "tool": "delete_object", "args": {"target": "EventSystem"}}
+{"id": "4b6b10ec54de495cbd91327266c6809a", "tool": "save_scene", "args": {}}
+{"id": "3e66f705e4cd4fdc921bdb833029146d", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn"}}
+{"id": "3e7ec58f156548159dc5047ba0c5bb52", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow"}}
+{"id": "46308979fa6c4c96b5780800489f6ea2", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/QuestionPanel"}}
+{"id": "be7974fcd9de45c69321f4e1918fa3f3", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/AnswerGrid"}}
+{"id": "263a5afb88a145d7aeaebabe96100557", "tool": "remove_component", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow", "component_type": "UnityEngine.UI.GraphicRaycaster"}}
+{"id": "60173e423dda49a7b6733ea71c45986d", "tool": "remove_component", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow", "component_type": "GraphicRaycaster"}}
+{"id": "9dd90d855e7d4407906e019e7ad178f1", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas/MainPanel/TopRow", "component_type": "UnityEngine.UI.GraphicRaycaster", "property": "enabled", "value": false}}
+{"id": "61d1d939e9a14b3091795d5f14cd0285", "tool": "find_object", "args": {"target": "Main Camera"}}
+{"id": "6ca8c8a9039848cbb4a49794a0c86499", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.Canvas", "property": "worldCamera", "value": "Main Camera"}}
+{"id": "224be85bba5a427dbc9dcec1399472b2", "tool": "save_scene", "args": {}}
+{"id": "b966a66bc24241e3abc116c35d8b57dc", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.BoxCollider", "property": "size", "value": [1.92, 1.08, 0.1]}}
+{"id": "cfbd54e8bdba49f58b661ffe65e6352b", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "7a99afc29c6141f99a4273b9b005ad74", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "73a7cb3f38f849abb851fcf5667e4012", "tool": "save_scene", "args": {}}
+{"id": "22354337f2a44f9da2e0b43403459bf8", "tool": "ping", "args": {}}
+{"id": "b07930ffe01648f5a6f446ebf490bb7d", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "92dfa0c006df4ee7941661f1d7236ebc", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP1"}}
+{"id": "cdc3b299d6164e64b65d5defc2581146", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP2"}}
+{"id": "435fa7b347b3415b882fe187763c89bf", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP2"}}
+{"id": "e7e1872a812346609a05819c96cf7736", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerA", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerA"}}
+{"id": "6ab4e526f16e45f7a7f6b7af291a2d16", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerB", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerB"}}
+{"id": "77364ba098d645d9a636e4530bbc7867", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerC", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerC"}}
+{"id": "ae44268c08304bf1bd77ab596fb06292", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/AnswerGrid/AnswerD", "udon_target": "ChromixTriviaCanvas", "event_name": "AnswerD"}}
+{"id": "fb969f1f5dcc4324b622f02b75d0cdc7", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/StartBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "StartGame"}}
+{"id": "7346ebda22c940fc8c335990d1831a84", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/BottomBar/ResetBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "ResetGame"}}
+{"id": "c400d06da3bc45ed9c7ddfeee9732026", "tool": "save_scene", "args": {}}
+{"id": "8e1ff8d3c0ed439ebc2bbc2994397691", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP1"}}
+{"id": "fcf398fd91154649a112d92668c12617", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P2Panel/P2JoinBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "JoinP2"}}
+{"id": "80e6a3e8a9e74adebf93743d802d52c1", "tool": "wire_button_to_udon", "args": {"button": "ChromixTriviaCanvas/MainPanel/TopRow/P1Panel/P1BuzzBtn", "udon_target": "ChromixTriviaCanvas", "event_name": "BuzzP1"}}
+{"id": "658014be85b245c08bfbb12bf524ab40", "tool": "save_scene", "args": {}}
+{"id": "d75317691fea48d4b547c937f81b84b7", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "23b35679adb142a585c126a0e4f192e1", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.BoxCollider", "property": "size", "value": [1.92, 1.08, 0.01]}}
+{"id": "db7eec136b6942aeaca1811ab4361e01", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.BoxCollider", "property": "center", "value": [0, 0, 0]}}
+{"id": "25bdf925d47a4d5aa3eb5992af8441ee", "tool": "save_scene", "args": {}}
+{"id": "0fc57ddcd04342cdbdf72cf78959faa4", "tool": "save_scene", "args": {}}
+{"id": "30eeea6242c749689626b6aaf446206e", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.Canvas", "property": "worldCamera", "value": "Main Camera"}}
+{"id": "b070b8bf347e42f58709fc5b9fcc2d93", "tool": "save_scene", "args": {}}
+{"id": "9e71c71604674fccb54c7ce239d76737", "tool": "set_component_property", "args": {"target": "ChromixTriviaCanvas", "component_type": "UnityEngine.Canvas", "property": "worldCamera", "value": "Main Camera"}}
+{"id": "1eb5166d081440fb9ce601c74611387b", "tool": "save_scene", "args": {}}
+{"id": "7f8bd00a1da441ceb4e2bd14b45a88ac", "tool": "ping", "args": {}}
+{"id": "2dd8c9cca72c4dc69f2c4f0c48708dc8", "tool": "ping", "args": {}}
+{"id": "9242d060fab04761bede72f4523685a5", "tool": "ping", "args": {}}
+{"id": "6488a144ce11498b996c3223c5c1454a", "tool": "ping", "args": {}}
+{"id": "f87b6f2340ca40fab814081d30d50436", "tool": "ping", "args": {}}
+{"id": "baf4a070446a484abbe94ee281cd9145", "tool": "ping", "args": {}}
+{"id": "b0c0eb294f384c30ab799bf8a89c8f72", "tool": "ping", "args": {}}
+{"id": "ebe4e94fb0684ee1a2f2c5266e435249", "tool": "ping", "args": {}}
+{"id": "282feabc2d5941118f3ef89069d5511e", "tool": "project_info", "args": {}}
+{"id": "b8a400dc0936489e9f33fff07aa49bdd", "tool": "list_hierarchy", "args": {"root": "CodeBreaker"}}
+{"id": "f077eab57d5e4749813393c550da984b", "tool": "list_hierarchy", "args": {"root": "CodeBreaker"}}
+{"id": "6d6e63da28f6446aa8be94b9321b0062", "tool": "find_object", "args": {"target": "CodeBreaker/CrackTheCode_Asset/GameSystems"}}
+{"id": "97c62dfceb6c4a07a5f4fe3493c90be7", "tool": "find_object", "args": {"target": "CodeBreaker/CrackTheCode_Asset/UI_Canvas"}}
+{"id": "9e17ce7dcea94a2b82187c3cc1393136", "tool": "find_object", "args": {"target": "CodeBreaker/CrackTheCode_Asset/UI_Canvas/Frame/KeypadPanel/Key_CONFIRM"}}
+{"id": "39f37788a5ea47f98f275816794f16c4", "tool": "create_udon_script", "args": {"asset_path": "Assets/Code Breaker/Scripts/CodeBreakerGame.cs", "class_name": "CodeBreakerGame"}}
+{"id": "35abb43bbc5c495ca9d5b5006aac8a44", "tool": "list_hierarchy", "args": {"root": "CodeBreaker"}}
+{"id": "4e3ed171e9d0450c9038478b642c9cb9", "tool": "ping", "args": {}}
+{"id": "03d641c177424b87aeec807a34b387e0", "tool": "ping", "args": {}}
+{"id": "1955e6405d3f4dba97a7c20fbb32d964", "tool": "project_info", "args": {}}
+{"id": "e7039a8fa2294626b7f93ca985f5e5fc", "tool": "list_hierarchy", "args": {}}
+{"id": "66621d25562a442a8c65e933e53e8ade", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "c276b149147d49b3a6c3276a958b9626", "tool": "find_object", "args": {"target": "ChromixTriviaCanvas/MainPanel/TitleText"}}
+{"id": "38188f2e02bd4f0c8ccb0138d0b74953", "tool": "create_udon_script", "args": {"asset_path": "Assets/CrackTheCode/CodeBreakerGame.cs", "class_name": "CodeBreakerGame"}}
+{"id": "7dc27ebf44114bd18a0fdf4bc2516fa5", "tool": "create_udon_script", "args": {"asset_path": "Assets/CrackTheCode/CodeBreakerGame.cs", "class_name": "CodeBreakerGame"}}
+{"id": "bb2fa442edb64d1b88669368283ebb2a", "tool": "create_udon_script", "args": {"asset_path": "Assets/CrackTheCode/CodeBreakerGame.cs", "class_name": "CodeBreakerGame"}}
+{"id": "8b17783db53d49cda84f2f171c9d9a1f", "tool": "create_udon_script", "args": {"asset_path": "Assets/CrackTheCode/CodeBreakerGame.cs", "class_name": "CodeBreakerGame"}}
+{"id": "1177d61bbcb949bab2428df8bdf336da", "tool": "ping", "args": {}}
+{"id":"crack_code_manual_ping","tool":"ping","args":{}}
+{"id": "b8687fff3ca14eb38e781464acea516a", "tool": "ping", "args": {}}
+{"id": "1549b238a38c4ffcb41bde7a61d3570c", "tool": "project_info", "args": {}}
+{"id": "d1b8e2352460481394f622baf7e2ff6f", "tool": "list_hierarchy", "args": {}}
+{"id": "a487ba44954c405193d2c257e3ef29d9", "tool": "find_object", "args": {"target": "CrackTheCode"}}
+{"id": "dc8b00e76ccf46a6a1ec377de655d103", "tool": "list_hierarchy", "args": {"root": "CrackTheCode"}}
+{"id": "b2b9b5dc9fce4c9fa2c679656b889627", "tool": "find_object", "args": {"target": "CrackTheCode"}}
+{"id": "ef01210f56f04ce3a30a97c3457d71aa", "tool": "list_hierarchy", "args": {}}
+{"id": "3aab7168237c40eb8f5e1ae2208c28c9", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas"}}
+{"id": "81d66d9ec8d34396955f831023cc3a6f", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/GameSystems"}}
+{"id": "970de79c88334c6782e7cf1a62135491", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas/Frame/JoinButton"}}
+{"id": "f4ec44ee248444c8b695bfa54e5c8897", "tool": "delete_object", "args": {"target": "ChromixTriviaCanvas"}}
+{"id": "e927ad2520134e6bbec0da52d9ac7f85", "tool": "list_hierarchy", "args": {}}
+{"id": "b7bc0132350c40ce93786e1554122ce6", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "39b69cdbda8346738ad33ddf6f219157", "tool": "save_scene", "args": {}}
+{"id": "adf72789acb24261b56b3f06f7d59bc2", "tool": "list_hierarchy", "args": {}}
+{"id": "740ccf2661154f15ba4228f9069ea4a1", "tool": "list_hierarchy", "args": {}}
+{"id": "a4750c7c344e449d936033f8ff09d3f6", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/GameSystems"}}
+{"id": "17d774e6da8a440886f08b1f24efe628", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "259cda2c8565498a925c600becffd3e4", "tool": "save_scene", "args": {}}
+{"id": "d2c7a19dcc034fdebac700ec6ac139e5", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/GameSystems"}}
+{"id": "a89e2117ae984d3a897e6d18bd43e51f", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas/Frame/JoinButton"}}
+{"id": "edebe52cdec54a04b238d01cabca3854", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas"}}
+{"id": "bfa9da4e1de541de8d4dc3e68866b8cb", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/CrackTheCode_EventSystem"}}
+{"id": "e532407308814fee81daed4387351509", "tool": "find_object", "args": {"target": "CrackTheCode"}}
+{"id": "5a72872adad6424ea08101ce6294b142", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "1530b4669b2948e28f4f98a10a0fb5c4", "tool": "save_scene", "args": {}}
+{"id": "8315df6f66ce4bb5bf059f444976c8bb", "tool": "list_hierarchy", "args": {}}
+{"id": "baa4084b58f0424e9a88a08a3ad33a30", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "e54b4ef2299949c384d1949f21edc8cd", "tool": "save_scene", "args": {}}
+{"id": "f03867ab87984ecb910424507df211cf", "tool": "list_hierarchy", "args": {}}
+{"id": "130bbc1848b54e53b38a9ae2b69f3762", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/GameSystems"}}
+{"id": "6e3bad66625a4347b5db3ef359d5051f", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas"}}
+{"id": "d3aa986db77b446c8b9b2db217b259a8", "tool": "find_object", "args": {"target": "CrackTheCode/CrackTheCode_Asset/UI_Canvas/Frame/JoinButton"}}
+{"id": "1d0ed6413a8646cdbac576ba205a2f12", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "744d906b584244a7ba890bbf0bdfd20f", "tool": "save_scene", "args": {}}
+{"id": "e36ce8bb7668401faf9d4d406644b7af", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "e1c005883064421dadc600caadc7e45d", "tool": "save_scene", "args": {}}
+{"id": "a22b4e1773784c95868049a4691d7899", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "4e687faf43454d2fb9da50777a8d0039", "tool": "save_scene", "args": {}}
+{"id": "b886c97af5114fbdb0f2d8f916368960", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "4ebaa35121924c5280d2b0e2ba291f6e", "tool": "save_scene", "args": {}}
+{"id": "f7171926c7d14996896496a7275b2610", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "672d92d0b7e940d3b11f8cf316324545", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "f127e2324f6a4f01bd8ebec2218b9c9d", "tool": "save_scene", "args": {}}
+{"id": "5ea8aa45a5f7423c8bf59d212029837f", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "493ece867e434a3c8ad03d9bd0ec6481", "tool": "delete_object", "args": {"target": "CrackTheCode"}}
+{"id": "35d540e94d82498bb9cb72beca9b4767", "tool": "save_scene", "args": {}}
+{"id": "581786a391b24814890d41c49af6e9cc", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "c92a3de4682e4cf4993769281c7891fa", "tool": "save_scene", "args": {}}
+{"id": "6057c482c39e417ebe543e37e8a93dec", "tool": "list_hierarchy", "args": {}}
+{"id": "648a2c5775914c14b2fec59d8671b2c8", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "ec138d4eb1f644c39a4386bbbf6eb13e", "tool": "save_scene", "args": {}}
+{"id": "cda60d3c05c846a78253e41ea6f3f1d4", "tool": "find_object", "args": {"target": "ChromixGroupPopup/ChromixGroupPopup_Asset/UI_Canvas/GroupPopup"}}
+{"id": "f17d06e51c2143e9b2743d5b02531ba7", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "35bd025f500e426faa444313be1c9526", "tool": "save_scene", "args": {}}
+{"id": "3a7e3ae487ce4b539f126138b0dc0aba", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "9dcd5e1390ef45bca8c82d07d7f945f6", "tool": "save_scene", "args": {}}
+{"id": "da02a0d2006d4bb2b4a372b27b4164b2", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "fe4b0894f09445068fe7fa164265fee0", "tool": "save_scene", "args": {}}
+{"id": "3f006bcb29054293b81c2d13a653e4e1", "tool": "delete_object", "args": {"target": "ChromixGroupPopup"}}
+{"id": "6f5f5f581e674b8c8bb74f07aff17b62", "tool": "save_scene", "args": {}}
+{"id": "f7fa053ee39e4ccea2106465f1bda909", "tool": "ping", "args": {}}
+{"id": "81719a87d4b640f0afe10f76745527ff", "tool": "ping", "args": {}}
