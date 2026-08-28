@@ -329,6 +329,14 @@ public class CodeBreakerGame : UdonSharpBehaviour
         NetworkCalling.SendCustomNetworkEvent((IUdonEventReceiver)this, NetworkEventTarget.Owner, nameof(RequestReset), roundId);
     }
 
+    // Admin/Moderator forced reset - bypasses the localSlot participant check.
+    // Called by the ChromixModTool; caller is responsible for admin/mod validation.
+    public void AdminReset()
+    {
+        Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        ResetSyncedState();
+    }
+
     [NetworkCallable]
     public void RequestReset(int eventRoundId)
     {

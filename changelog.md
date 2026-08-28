@@ -47,3 +47,27 @@
 - `Assets/CrackTheCode/ChromixGroupPopup.cs` - UdonSharp script for animated group join popup with `Store.OpenGroupPage` integration.
 - Animated popup UI added to prefab builder: slides in from bottom, auto-shows after delay, join button triggers native VRChat group page.
 - Group ID: `grp_07a66a18-762d-48c6-8e07-d2ef08388546`
+
+## 2026-08-27 - Chromix UniClue
+
+### Added
+- Independent `ChromixUniClue` grouped world asset with six player seats, Classic and timed Party modes, private clue entry, duplicate-clue cancellation, rotating guesser, cooperative scoring, tutorial UI, and 120 embedded mystery words.
+- Six local 256x144 live-avatar portrait render textures driven by round-robin head cameras; no external image-generation service is used.
+- Animated world-space lobby/game UI and a builder that preserves placement while replacing only the existing `ChromixUniClue` root.
+
+### Verified
+- Unity C# and UdonSharp compilation complete with `compiledVersion: 2`.
+- One `ChromixUniClue` scene root exists with a valid `VRC.Udon.UdonBehaviour`, world-space canvas, and six portrait cameras.
+
+## 2026-08-20 - Mod Tool crash fix + Trivia multiplayer fix
+
+### Fixed
+- **Mod Tool halting after a few commands**: NullReferenceException in SetWalkSpeed when _selectedPlayer became invalid (player left or was kicked). Added !_selectedPlayer.IsValid() guard to all 10 action methods (Freeze, Unfreeze, ToggleFreeze, ToggleMute, BanPlayer, UnbanPlayer, PromotePlayer, DemotePlayer, TeleportToPlayer, BringPlayer, SetPlayerSpeed, SetPlayerSize).
+- **Trivia multiplayer - other players not showing up**: JoinGame, BuzzIn, and SubmitAnswer used Networking.SetOwner() then immediately called RequestSerialization(). Since SetOwner is async in VRChat, the serialization was dropped before ownership transferred. Replaced with SendCustomNetworkEvent(NetworkEventTarget.Owner, ...) so the owner handles all state changes and serializes reliably.
+
+### Changed
+- Trivia JoinP1-P4 buttons now send NetJoinP1-P4 network events to the owner instead of stealing ownership.
+- Trivia BuzzP1-P4 buttons now send NetBuzzP1-P4 network events to the owner.
+- Trivia AnswerA-D buttons now send NetAnswerA-D network events to the owner.
+- Owner-side OwnerJoin, OwnerBuzz, OwnerAnswer methods handle the state changes and serialize.
+- OwnerJoin finds the first unjoined player and assigns them to the requested slot (since the old API doesn't expose the calling player).

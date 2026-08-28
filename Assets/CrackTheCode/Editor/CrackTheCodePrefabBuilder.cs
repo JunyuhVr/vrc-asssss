@@ -17,7 +17,7 @@ public static class CrackTheCodePrefabBuilder
 {
     private const string PrefabPath = "Assets/CrackTheCode/CrackTheCode.prefab";
     private const string BuildKey = "VrcAsStupidName.CrackTheCode.BuildVersion";
-    private const int BuildVersion = 23;
+    private const int BuildVersion = 24;
 
     private static readonly Color Background = Hex("#050C16FF");
     private static readonly Color Panel = Hex("#0A1726F5");
@@ -33,12 +33,29 @@ public static class CrackTheCodePrefabBuilder
     static CrackTheCodePrefabBuilder()
     {
         EditorApplication.delayCall += BuildIfNeeded;
+        EditorApplication.update += UpdateCheck;
+    }
+
+    private static int _retryCount = 0;
+
+    private static void UpdateCheck()
+    {
+        if (EditorApplication.isPlayingOrWillChangePlaymode) return;
+        if (EditorApplication.isCompiling) return;
+        if (EditorPrefs.GetInt(BuildKey, 0) >= BuildVersion) { EditorApplication.update -= UpdateCheck; return; }
+        _retryCount++;
+        if (_retryCount > 300) { EditorApplication.update -= UpdateCheck; return; }
+        if (_retryCount < 60) return;
+        EditorApplication.update -= UpdateCheck;
+        Debug.Log("[CrackTheCode] UpdateCheck triggered build after " + _retryCount + " frames.");
+        EditorPrefs.SetInt(BuildKey, BuildVersion);
+        Build();
     }
 
     [MenuItem("Tools/Crack the Code/Rebuild Grouped Asset")]
     public static void RebuildFromMenu()
     {
-        EditorPrefs.SetInt(BuildKey, BuildVersion);
+        EditorPrefs.SetInt(BuildKey, 0);
         Build();
     }
 
@@ -118,7 +135,7 @@ public static class CrackTheCodePrefabBuilder
                 layout.preferredWidth = 112f;
                 layout.preferredHeight = 132f;
                 AddOutline(cell, CyanSoft, new Vector2(2f, -2f));
-                CreateText("Label", cell.transform, "·", 64f, White, TextAnchor.MiddleCenter, new Vector2(112f, 132f), Vector2.zero, FontStyle.Bold, 0f, font);
+                CreateText("Label", cell.transform, "Ã‚Â·", 64f, White, TextAnchor.MiddleCenter, new Vector2(112f, 132f), Vector2.zero, FontStyle.Bold, 0f, font);
             }
 
             CreateButton("JoinButton", frame.transform, "JOIN GAME", new Vector2(620f, 138f), new Vector2(0f, 8f), Cyan, Background, 36f, font);
@@ -364,5 +381,19 @@ public static class CrackTheCodePrefabBuilder
     {
         Color color;
         return ColorUtility.TryParseHtmlString(value, out color) ? color : Color.white;
+    }
+}
+public class CrackTheCodeAssetPostprocessor : AssetPostprocessor
+{
+    static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
+    {
+        foreach (string path in importedAssets)
+        {
+            if (path.StartsWith("Assets/CrackTheCode/") && path.EndsWith(".cs"))
+            {
+                CrackTheCodePrefabBuilder.RebuildFromMenu();
+                return;
+            }
+        }
     }
 }

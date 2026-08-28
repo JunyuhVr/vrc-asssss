@@ -60,3 +60,24 @@
 ## Remaining
 - Optional: VRChat Build & Test with two clients for PvP validation
 - The controller will become functional once the Trivia compile blocker is resolved
+
+## Chromix UniClue
+- Built as a separate `ChromixUniClue > ChromixUniClue_Asset` hierarchy without modifying other game roots.
+- Uses owner-authoritative parameterized network calls for joining, leaving, starting modes, submitting clues, guessing, skipping, and resetting.
+- Uses six local portrait cameras and persistent render textures instead of unavailable VRChat profile-thumbnail access.
+- Portrait cameras update round-robin and render only Player/PlayerLocal layers to reduce rendering cost.
+- Builder removes only duplicate `ChromixUniClue` roots, preserves the first instance position/rotation, and creates one replacement.
+- Verified `ChromixUniClueGame.asset` has `compiledVersion: 2` and the scene `GameSystems` object has both the UdonSharp component and backing `VRC.Udon.UdonBehaviour`.
+
+## 2026-08-20 - Mod Tool crash + Trivia multiplayer
+
+### Mod Tool halting
+1. **Symptom**: Mod Tool stops working after a few commands.
+2. **Diagnosis**: Editor.log showed UdonBehaviour will be halted with NullReferenceException in SetWalkSpeed. The _selectedPlayer reference became invalid when a player left or was kicked, but the code only checked for 
+ull, not IsValid().
+3. **Fix**: Added !_selectedPlayer.IsValid() to all 10 action method guards using eplace_all.
+
+### Trivia multiplayer
+1. **Symptom**: Other players join Trivia but don't show up on the panel.
+2. **Diagnosis**: JoinGame called Networking.SetOwner(local, gameObject) then immediately modified synced fields and called RequestSerialization(). In VRChat, ownership transfer is async — the serialization happens before ownership transfers, so it's dropped.
+3. **Fix**: Replaced direct ownership-steal with SendCustomNetworkEvent(NetworkEventTarget.Owner, ...) for Join, Buzz, and Answer buttons. The owner handles all state changes and serializes reliably. OwnerJoin iterates all players to find the first unjoined one (the old API doesn't expose the calling player identity).
