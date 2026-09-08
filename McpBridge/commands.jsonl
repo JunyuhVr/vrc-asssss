@@ -173,3 +173,5 @@
 {"id": "6f5f5f581e674b8c8bb74f07aff17b62", "tool": "save_scene", "args": {}}
 {"id": "f7fa053ee39e4ccea2106465f1bda909", "tool": "ping", "args": {}}
 {"id": "81719a87d4b640f0afe10f76745527ff", "tool": "ping", "args": {}}
+{"id": "715ec9d0894948988d0bf34b6a59cc2a", "tool": "ping", "args": {}}
+{"id":"cmd_20260905192512187","tool":"export_package","args":{"asset_paths":["Assets/ChromixUniClue"],"export_path":"C:/Users/junyu/Downloads/ChromixUniClue-Complete.unitypackage"}}

@@ -45,6 +45,55 @@ public static class ChromixUniClueBuilder
         ScheduleIfNeeded();
     }
 
+    [MenuItem("Tools/Chromix UniClue/Export Drag-and-Drop Package")]
+    public static void ExportDragAndDropPackage()
+    {
+        string defaultName = "ChromixUniClue_DragAndDrop.unitypackage";
+        string defaultDir = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop));
+        string exportPath = EditorUtility.SaveFilePanel("Export ChromixUniClue Package", defaultDir, defaultName, "unitypackage");
+        if (string.IsNullOrEmpty(exportPath)) return;
+
+        // Collect all asset paths to export
+        var assetPaths = new System.Collections.Generic.List<string>
+        {
+            "Assets/ChromixUniClue"
+        };
+
+        // Include the serialized Udon program asset so the prefab works without recompilation
+        string programAssetGuid = "048c88e4ab3fe51479d56e28e18acebb";
+        string serializedProgramPath = AssetDatabase.GUIDToAssetPath(programAssetGuid);
+        if (!string.IsNullOrEmpty(serializedProgramPath) && System.IO.File.Exists(serializedProgramPath))
+        {
+            assetPaths.Add(serializedProgramPath);
+        }
+
+        // Also check for the source .cs script's compiled program by GUID
+        string sourceScriptGuid = "5bc798d982d696643a09f0bdcea88946";
+        string sourceSerializedPath = AssetDatabase.GUIDToAssetPath(sourceScriptGuid);
+        if (!string.IsNullOrEmpty(sourceSerializedPath) && System.IO.File.Exists(sourceSerializedPath))
+        {
+            assetPaths.Add(sourceSerializedPath);
+        }
+
+        AssetDatabase.ExportPackage(
+            assetPaths.ToArray(),
+            exportPath,
+            ExportPackageOptions.Recurse | ExportPackageOptions.IncludeDependencies);
+
+        if (System.IO.File.Exists(exportPath))
+        {
+            Debug.Log("[ChromixUniClue] Package exported to: " + exportPath);
+            EditorUtility.DisplayDialog("Export Complete",
+                "ChromixUniClue package exported successfully.\n\n" + exportPath +
+                "\n\nDrag the .unitypackage into any VRChat project to install.", "OK");
+        }
+        else
+        {
+            Debug.LogError("[ChromixUniClue] Package export failed.");
+            EditorUtility.DisplayDialog("Export Failed", "Failed to export the package. Check the console for details.", "OK");
+        }
+    }
+
     private static void ScheduleIfNeeded()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode || EditorPrefs.GetInt(BuildKey, 0) >= BuildVersion || _pending) return;
